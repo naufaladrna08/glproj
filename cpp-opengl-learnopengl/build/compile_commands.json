@@ -1,0 +1,62 @@
+[
+{
+  "directory": "/home/naufal/Documents/Projects/cpp-opengl-learnopengl/build",
+  "command": "/usr/bin/g++  -I/home/naufal/Documents/Projects/cpp-opengl-learnopengl/include -g -o CMakeFiles/OpenGL.dir/main.cpp.o -c /home/naufal/Documents/Projects/cpp-opengl-learnopengl/main.cpp",
+  "file": "/home/naufal/Documents/Projects/cpp-opengl-learnopengl/main.cpp"
+},
+{
+  "directory": "/home/naufal/Documents/Projects/cpp-opengl-learnopengl/build",
+  "command": "/usr/bin/gcc  -I/home/naufal/Documents/Projects/cpp-opengl-learnopengl/include -g -o CMakeFiles/OpenGL.dir/src/glad.c.o -c /home/naufal/Documents/Projects/cpp-opengl-learnopengl/src/glad.c",
+  "file": "/home/naufal/Documents/Projects/cpp-opengl-learnopengl/src/glad.c"
+},
+{
+  "directory": "/home/naufal/Documents/Projects/cpp-opengl-learnopengl/build",
+  "command": "/usr/bin/g++  -I/home/naufal/Documents/Projects/cpp-opengl-learnopengl/include -g -o CMakeFiles/OpenGL.dir/src/Shader.cpp.o -c /home/naufal/Documents/Projects/cpp-opengl-learnopengl/src/Shader.cpp",
+  "file": "/home/naufal/Documents/Projects/cpp-opengl-learnopengl/src/Shader.cpp"
+},
+{
+  "directory": "/home/naufal/Documents/Projects/cpp-opengl-learnopengl/build",
+  "command": "/usr/bin/g++  -I/home/naufal/Documents/Projects/cpp-opengl-learnopengl/include -g -o CMakeFiles/OpenGL.dir/src/OpenGLBuffer.cpp.o -c /home/naufal/Documents/Projects/cpp-opengl-learnopengl/src/OpenGLBuffer.cpp",
+  "file": "/home/naufal/Documents/Projects/cpp-opengl-learnopengl/src/OpenGLBuffer.cpp"
+},
+{
+  "directory": "/home/naufal/Documents/Projects/cpp-opengl-learnopengl/build",
+  "command": "/usr/bin/g++  -I/home/naufal/Documents/Projects/cpp-opengl-learnopengl/include -g -o CMakeFiles/OpenGL.dir/src/StbImage.cpp.o -c /home/naufal/Documents/Projects/cpp-opengl-learnopengl/src/StbImage.cpp",
+  "file": "/home/naufal/Documents/Projects/cpp-opengl-learnopengl/src/StbImage.cpp"
+},
+{
+  "directory": "/home/naufal/Documents/Projects/cpp-opengl-learnopengl/build",
+  "command": "/usr/bin/g++  -I/home/naufal/Documents/Projects/cpp-opengl-learnopengl/include -g -o CMakeFiles/OpenGL.dir/src/Texture.cpp.o -c /home/naufal/Documents/Projects/cpp-opengl-learnopengl/src/Texture.cpp",
+  "file": "/home/naufal/Documents/Projects/cpp-opengl-learnopengl/src/Texture.cpp"
+},
+{
+  "directory": "/home/naufal/Documents/Projects/cpp-opengl-learnopengl/build",
+  "command": "/usr/bin/g++  -I/home/naufal/Documents/Projects/cpp-opengl-learnopengl/include -g -o CMakeFiles/OpenGL.dir/src/Rectangle.cpp.o -c /home/naufal/Documents/Projects/cpp-opengl-learnopengl/src/Rectangle.cpp",
+  "file": "/home/naufal/Documents/Projects/cpp-opengl-learnopengl/src/Rectangle.cpp"
+},
+{
+  "directory": "/home/naufal/Documents/Projects/cpp-opengl-learnopengl/build",
+  "command": "/usr/bin/g++  -I/home/naufal/Documents/Projects/cpp-opengl-learnopengl/include -g -o CMakeFiles/OpenGL.dir/src/Window.cpp.o -c /home/naufal/Documents/Projects/cpp-opengl-learnopengl/src/Window.cpp",
+  "file": "/home/naufal/Documents/Projects/cpp-opengl-learnopengl/src/Window.cpp"
+},
+{
+  "directory": "/home/naufal/Documents/Projects/cpp-opengl-learnopengl/build",
+  "command": "/usr/bin/g++  -I/home/naufal/Documents/Projects/cpp-opengl-learnopengl/include -g -o CMakeFiles/OpenGL.dir/src/Camera.cpp.o -c /home/naufal/Documents/Projects/cpp-opengl-learnopengl/src/Camera.cpp",
+  "file": "/home/naufal/Documents/Projects/cpp-opengl-learnopengl/src/Camera.cpp"
+},
+{
+  "directory": "/home/naufal/Documents/Projects/cpp-opengl-learnopengl/build",
+  "command": "/usr/bin/g++  -I/home/naufal/Documents/Projects/cpp-opengl-learnopengl/include -g -o CMakeFiles/OpenGL.dir/src/Cube.cpp.o -c /home/naufal/Documents/Projects/cpp-opengl-learnopengl/src/Cube.cpp",
+  "file": "/home/naufal/Documents/Projects/cpp-opengl-learnopengl/src/Cube.cpp"
+},
+{
+  "directory": "/home/naufal/Documents/Projects/cpp-opengl-learnopengl/build",
+  "command": "/usr/bin/g++  -I/home/naufal/Documents/Projects/cpp-opengl-learnopengl/include -g -o CMakeFiles/OpenGL.dir/src/ShaderCollection.cpp.o -c /home/naufal/Documents/Projects/cpp-opengl-learnopengl/src/ShaderCollection.cpp",
+  "file": "/home/naufal/Documents/Projects/cpp-opengl-learnopengl/src/ShaderCollection.cpp"
+},
+{
+  "directory": "/home/naufal/Documents/Projects/cpp-opengl-learnopengl/build",
+  "command": "/usr/bin/g++  -I/home/naufal/Documents/Projects/cpp-opengl-learnopengl/include -g -o CMakeFiles/OpenGL.dir/src/LightObjects/PointLight.cpp.o -c /home/naufal/Documents/Projects/cpp-opengl-learnopengl/src/LightObjects/PointLight.cpp",
+  "file": "/home/naufal/Documents/Projects/cpp-opengl-learnopengl/src/LightObjects/PointLight.cpp"
+}
+]

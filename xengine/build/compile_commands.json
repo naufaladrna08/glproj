@@ -1,0 +1,42 @@
+[
+{
+  "directory": "/home/naufal/Documents/Projects/xengine/build",
+  "command": "/usr/bin/g++  -I/home/naufal/Documents/Projects/xengine/include -g -o CMakeFiles/XEngine.dir/main.cpp.o -c /home/naufal/Documents/Projects/xengine/main.cpp",
+  "file": "/home/naufal/Documents/Projects/xengine/main.cpp"
+},
+{
+  "directory": "/home/naufal/Documents/Projects/xengine/build",
+  "command": "/usr/bin/gcc  -I/home/naufal/Documents/Projects/xengine/include -g -o CMakeFiles/XEngine.dir/src/gl.c.o -c /home/naufal/Documents/Projects/xengine/src/gl.c",
+  "file": "/home/naufal/Documents/Projects/xengine/src/gl.c"
+},
+{
+  "directory": "/home/naufal/Documents/Projects/xengine/build",
+  "command": "/usr/bin/gcc  -I/home/naufal/Documents/Projects/xengine/include -g -o CMakeFiles/XEngine.dir/src/glx.c.o -c /home/naufal/Documents/Projects/xengine/src/glx.c",
+  "file": "/home/naufal/Documents/Projects/xengine/src/glx.c"
+},
+{
+  "directory": "/home/naufal/Documents/Projects/xengine/build",
+  "command": "/usr/bin/g++  -I/home/naufal/Documents/Projects/xengine/include -g -o CMakeFiles/XEngine.dir/src/Platform/LinuxX11.cpp.o -c /home/naufal/Documents/Projects/xengine/src/Platform/LinuxX11.cpp",
+  "file": "/home/naufal/Documents/Projects/xengine/src/Platform/LinuxX11.cpp"
+},
+{
+  "directory": "/home/naufal/Documents/Projects/xengine/build",
+  "command": "/usr/bin/g++  -I/home/naufal/Documents/Projects/xengine/include -g -o CMakeFiles/XEngine.dir/src/Logger.cpp.o -c /home/naufal/Documents/Projects/xengine/src/Logger.cpp",
+  "file": "/home/naufal/Documents/Projects/xengine/src/Logger.cpp"
+},
+{
+  "directory": "/home/naufal/Documents/Projects/xengine/build",
+  "command": "/usr/bin/g++  -I/home/naufal/Documents/Projects/xengine/include -g -o CMakeFiles/XEngine.dir/src/String.cpp.o -c /home/naufal/Documents/Projects/xengine/src/String.cpp",
+  "file": "/home/naufal/Documents/Projects/xengine/src/String.cpp"
+},
+{
+  "directory": "/home/naufal/Documents/Projects/xengine/build",
+  "command": "/usr/bin/g++  -I/home/naufal/Documents/Projects/xengine/include -g -o CMakeFiles/XEngine.dir/src/Window.cpp.o -c /home/naufal/Documents/Projects/xengine/src/Window.cpp",
+  "file": "/home/naufal/Documents/Projects/xengine/src/Window.cpp"
+},
+{
+  "directory": "/home/naufal/Documents/Projects/xengine/build",
+  "command": "/usr/bin/g++  -I/home/naufal/Documents/Projects/xengine/include -g -o CMakeFiles/XEngine.dir/src/Event.cpp.o -c /home/naufal/Documents/Projects/xengine/src/Event.cpp",
+  "file": "/home/naufal/Documents/Projects/xengine/src/Event.cpp"
+}
+]

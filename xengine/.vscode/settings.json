@@ -1,0 +1,8 @@
+{
+  "files.associations": {
+    "string": "cpp",
+    "cstring": "cpp",
+    "memory_resource": "cpp",
+    "system_error": "cpp"
+  }
+}

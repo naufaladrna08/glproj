@@ -1,0 +1,1 @@
+/usr/bin/g++ -g -rdynamic CMakeFiles/XEngine.dir/main.cpp.o CMakeFiles/XEngine.dir/src/gl.c.o CMakeFiles/XEngine.dir/src/glx.c.o CMakeFiles/XEngine.dir/src/Platform/LinuxX11.cpp.o CMakeFiles/XEngine.dir/src/Logger.cpp.o CMakeFiles/XEngine.dir/src/String.cpp.o CMakeFiles/XEngine.dir/src/Window.cpp.o CMakeFiles/XEngine.dir/src/Event.cpp.o -o XEngine  -lX11 -lGLU -lGL -lXext 
