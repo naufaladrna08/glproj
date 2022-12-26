@@ -23,9 +23,7 @@ namespace Tridme {
 
       inline OS* GetOSImplementation() { return this->m_os; }
 
-      #ifdef __linux__
-      inline KeyCode KEY(int keycode) { return XKeysymToKeycode(this->m_os->GetDisplay(), keycode); }
-      #endif
+      bool GetKey(int key);
 
     private:
       int m_x, m_y, m_width, m_height;
@@ -38,6 +36,7 @@ namespace Tridme {
        * for X11; HWND, HINSTANCE for WinAPI.
        */
       OS* m_os;
+      Event* m_ev;
   };
 }
 

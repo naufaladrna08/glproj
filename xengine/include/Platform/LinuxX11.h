@@ -15,9 +15,6 @@
 #include <xcb/xcb.h>
 #include <X11/keysymdef.h>
 
-#define TRIDME_KEY_ESCAPE 0x1B
-#define TRIDME_KEY_SPACE  0x20
-
 class OS {
   public: 
     OS(int width, int height, const char* title);
@@ -33,7 +30,9 @@ class OS {
     Tridme::EventType GetHandler();
     
     /* Event Handlers */
-    int KeyCodeHandler();
+    bool X11GetKey(int key);
+    int GetKeyCode();
+    Tridme::MouseEvent GetMouseEvent();
 
     inline String GetName() { return "GNU/Linux or Unix with X11"; }
     inline Display* GetDisplay() { return m_display; }

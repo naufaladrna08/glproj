@@ -1,9 +1,9 @@
 CMakeFiles/XEngine.dir/src/Event.cpp.o: \
- /home/naufal/Documents/Projects/xengine/src/Event.cpp \
+ /home/naufal/Documents/Projects/glproj/xengine/src/Event.cpp \
  /usr/include/stdc-predef.h \
- /home/naufal/Documents/Projects/xengine/include/Event.h \
- /home/naufal/Documents/Projects/xengine/include/glad/gl.h \
- /home/naufal/Documents/Projects/xengine/include/KHR/khrplatform.h \
+ /home/naufal/Documents/Projects/glproj/xengine/include/Event.h \
+ /home/naufal/Documents/Projects/glproj/xengine/include/glad/gl.h \
+ /home/naufal/Documents/Projects/glproj/xengine/include/KHR/khrplatform.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -19,7 +19,7 @@ CMakeFiles/XEngine.dir/src/Event.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
- /home/naufal/Documents/Projects/xengine/include/glad/glx.h \
+ /home/naufal/Documents/Projects/glproj/xengine/include/glad/glx.h \
  /usr/include/X11/X.h /usr/include/X11/Xlib.h \
  /usr/include/x86_64-linux-gnu/sys/types.h \
  /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \

@@ -1,28 +1,49 @@
 #ifndef WINDOW_HPP
 #define WINDOW_HPP
+#include <Logger.hpp>
+#include <String.hpp>
+#include <Event.hpp>
+#include <Core/Timer.hpp>
 
-#include <iostream>
-#include <glad/glad.h>
-#include <GLFW/glfw3.h>
-#include <Camera.hpp>
+#ifdef __linux__
+  #include <Platform/LinuxX11.hpp>
+#endif
 
-class Window {
-  public:
-    Window(int width, int height, const char* title);
-    ~Window();
+namespace Tridme {
+  class Window {
+    public:
+      Window(int width, int height, const char* title);
+      ~Window();
 
-    void SetCamera(Camera& camera);
-    bool IsOpen();
-    void Display();
-    inline GLFWwindow* GetWindow() { return this->m_window; };
+      bool IsOpen();
+      void Display();
+      void Close();
+      int  PollEvents();
 
-  private:
-    int m_x, m_y, m_width, m_height;
-    const char* m_title;
-    bool m_running;
-    GLFWwindow* m_window;
-    
-    Camera* m_windowcamera;
-};
+      Event GetHandler();
+
+      inline OS* GetOSImplementation() { return this->m_os; }
+      float GetTime();
+
+      bool GetKey(int key);
+
+      void SetPointerMode(int mode);
+
+    private:
+      int m_x, m_y, m_width, m_height;
+      const char* m_title;
+      bool m_running;
+
+      /*
+       * OS Implementation
+       * Contains required elements in every supported OS like Display
+       * for X11; HWND, HINSTANCE for WinAPI.
+       */
+      OS* m_os;
+      Event* m_ev;
+      Timer* m_time;
+      double m_time_offset;
+  };
+}
 
 #endif 

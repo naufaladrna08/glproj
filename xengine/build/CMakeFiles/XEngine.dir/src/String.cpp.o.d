@@ -1,7 +1,7 @@
 CMakeFiles/XEngine.dir/src/String.cpp.o: \
- /home/naufal/Documents/Projects/xengine/src/String.cpp \
+ /home/naufal/Documents/Projects/glproj/xengine/src/String.cpp \
  /usr/include/stdc-predef.h \
- /home/naufal/Documents/Projects/xengine/include/String.h \
+ /home/naufal/Documents/Projects/glproj/xengine/include/String.h \
  /usr/include/c++/11/stdlib.h /usr/include/c++/11/cstdlib \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \

@@ -4,8 +4,8 @@
 
 
 # Configuration directories and files
-SourceDirectory: /home/naufal/Documents/Projects/xengine
-BuildDirectory: /home/naufal/Documents/Projects/xengine/build
+SourceDirectory: /home/naufal/Documents/Projects/glproj/xengine
+BuildDirectory: /home/naufal/Documents/Projects/glproj/xengine/build
 
 # Where to place the cost data store
 CostDataFile: 
@@ -26,7 +26,7 @@ SubmitURL: http://
 NightlyStartTime: 00:00:00 EDT
 
 # Commands for the build/test/submit cycle
-ConfigureCommand: "/usr/bin/cmake" "/home/naufal/Documents/Projects/xengine"
+ConfigureCommand: "/usr/bin/cmake" "/home/naufal/Documents/Projects/glproj/xengine"
 MakeCommand: /usr/bin/cmake --build . --config "${CTEST_CONFIGURATION_TYPE}" -- -i
 DefaultCTestConfigurationType: Release
 

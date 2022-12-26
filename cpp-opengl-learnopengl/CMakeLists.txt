@@ -8,7 +8,11 @@ enable_testing()
 add_executable (
   OpenGL 
   main.cpp 
-  src/glad.c 
+  src/gl.c 
+  src/glx.c 
+  src/Logger.cpp 
+  src/String.cpp 
+  src/Event.cpp 
   src/Shader.cpp 
   src/OpenGLBuffer.cpp 
   src/StbImage.cpp 
@@ -19,9 +23,11 @@ add_executable (
   src/Cube.cpp
   src/ShaderCollection.cpp
   src/LightObjects/PointLight.cpp
+  src/Platform/LinuxX11.cpp
+  src/Core/Timer.cpp
 )
 
-target_link_libraries(OpenGL -lglfw3 -lGL -ldl -lX11)
+target_link_libraries(OpenGL -lglfw3 -lGL -ldl -lX11 -lGLU -lGL -lXext)
 
 set(CPACK_PROJECT_NAME ${PROJECT_NAME})
 set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})

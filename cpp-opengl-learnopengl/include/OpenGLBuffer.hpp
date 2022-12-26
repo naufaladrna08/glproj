@@ -2,7 +2,7 @@
 #define OPENGLBUFFER_HPP
 
 #include <iostream>
-#include <glad/glad.h>
+#include <glad/gl.h>
 
 /*! 
  * @brief This class do "the buffer" part for you :*

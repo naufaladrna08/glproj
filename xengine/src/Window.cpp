@@ -40,10 +40,18 @@ int Tridme::Window::PollEvents() {
 }
 
 Tridme::Event Tridme::Window::GetHandler() {
-  Event event;
+  m_ev = new Event;
+  m_ev->type  = m_os->GetHandler();
+  m_ev->key   = m_os->GetKeyCode();
+  m_ev->mouse = m_os->GetMouseEvent();
 
-  event.type = m_os->GetHandler();
-  event.keyCode = m_os->KeyCodeHandler();
+  return *m_ev;
+}
 
-  return event;
+bool Tridme::Window::GetKey(int key) {
+  #ifdef __linux__ 
+    return m_os->X11GetKey(key);
+  #endif
+
+  return false;
 }

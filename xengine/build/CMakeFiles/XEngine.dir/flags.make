@@ -5,13 +5,13 @@
 # compile CXX with /usr/bin/g++
 C_DEFINES = 
 
-C_INCLUDES = -I/home/naufal/Documents/Projects/xengine/include
+C_INCLUDES = -I/home/naufal/Documents/Projects/glproj/xengine/include
 
 C_FLAGS = -g
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/naufal/Documents/Projects/xengine/include
+CXX_INCLUDES = -I/home/naufal/Documents/Projects/glproj/xengine/include
 
 CXX_FLAGS = -g
 

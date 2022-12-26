@@ -1,8 +1,8 @@
 CMakeFiles/XEngine.dir/src/Platform/LinuxX11.cpp.o: \
- /home/naufal/Documents/Projects/xengine/src/Platform/LinuxX11.cpp \
+ /home/naufal/Documents/Projects/glproj/xengine/src/Platform/LinuxX11.cpp \
  /usr/include/stdc-predef.h \
- /home/naufal/Documents/Projects/xengine/include/Platform/LinuxX11.h \
- /home/naufal/Documents/Projects/xengine/include/String.h \
+ /home/naufal/Documents/Projects/glproj/xengine/include/Platform/LinuxX11.h \
+ /home/naufal/Documents/Projects/glproj/xengine/include/String.h \
  /usr/include/c++/11/stdlib.h /usr/include/c++/11/cstdlib \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -83,21 +83,21 @@ CMakeFiles/XEngine.dir/src/Platform/LinuxX11.cpp.o: \
  /usr/include/X11/keysym.h /usr/include/X11/keysymdef.h \
  /usr/include/X11/Xproto.h /usr/include/X11/Xmd.h \
  /usr/include/X11/Xprotostr.h \
- /home/naufal/Documents/Projects/xengine/include/glad/gl.h \
- /home/naufal/Documents/Projects/xengine/include/KHR/khrplatform.h \
+ /home/naufal/Documents/Projects/glproj/xengine/include/glad/gl.h \
+ /home/naufal/Documents/Projects/glproj/xengine/include/KHR/khrplatform.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
- /home/naufal/Documents/Projects/xengine/include/glad/glx.h \
+ /home/naufal/Documents/Projects/glproj/xengine/include/glad/glx.h \
  /usr/include/inttypes.h \
- /home/naufal/Documents/Projects/xengine/include/Logger.h \
+ /home/naufal/Documents/Projects/glproj/xengine/include/Logger.h \
  /usr/include/c++/11/cstdarg /usr/include/c++/11/ctime \
  /usr/include/time.h /usr/include/x86_64-linux-gnu/bits/time.h \
  /usr/include/x86_64-linux-gnu/bits/timex.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h \
  /usr/include/c++/11/cstring \
- /home/naufal/Documents/Projects/xengine/include/Event.h \
+ /home/naufal/Documents/Projects/glproj/xengine/include/Event.h \
  /usr/include/xcb/xcb.h /usr/include/x86_64-linux-gnu/sys/uio.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h \
  /usr/include/x86_64-linux-gnu/bits/uio_lim.h \

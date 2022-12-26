@@ -16,11 +16,6 @@ int main(void) {
     while (window->PollEvents()) {
       Tridme::Event event = window->GetHandler();
 
-      if (event.type == Tridme::EVENT_KEYBOARD_PRESSED && 
-          event.keyCode == Tridme::KEY(TRIDME_KEY_B)) {
-        // window->Close();
-        LOG(INFO, "A IS PRESSED");
-      }
     }
 
     glClearColor(0.8, 0.6, 0.7, 1.0);

@@ -24,7 +24,14 @@ int OS::Init() {
   m_colormap = XCreateColormap(m_display, *m_root, m_visual, AllocNone);
   
   XSetWindowAttributes attributes;
-  attributes.event_mask = ExposureMask | KeyPressMask | KeyReleaseMask;
+  attributes.event_mask = 
+    ExposureMask | 
+    KeyPressMask | 
+    KeyReleaseMask | 
+    ButtonPressMask | 
+    ButtonReleaseMask |
+    PointerMotionMask;
+
   attributes.colormap = m_colormap;
 
   m_window = XCreateWindow(m_display, *m_root, 0, 0, m_windowWidth, m_windowHeight, 0,
@@ -113,22 +120,87 @@ int OS::PollEvents() {
 
 Tridme::EventType OS::GetHandler() {
   XNextEvent(m_display, &m_xev);
+  Tridme::EventType eventtype;
 
-  if (m_xev.type == KeyPress) {
-    return Tridme::EventType::EVENT_KEYBOARD_PRESSED;
-  } else if (m_xev.type == KeyRelease) {
-    return Tridme::EventType::EVENT_KEYBOARD_RELEASED;
+  switch (m_xev.type) {
+    case ButtonPress:   eventtype = Tridme::EventType::EVENT_MOUSE_BUTTON_PRESSED; break;
+    case ButtonRelease: eventtype = Tridme::EventType::EVENT_MOUSE_BUTTON_RELEASED; break;
+    case KeyPress:      eventtype = Tridme::EventType::EVENT_KEYBOARD_PRESSED; break;
+    case KeyRelease:    eventtype = Tridme::EventType::EVENT_KEYBOARD_RELEASED; break;
+    case MotionNotify:  eventtype = Tridme::EventType::EVENT_MOUSE_MOTION; break;
+
+    default: 
+      eventtype = Tridme::EventType::UNHANDLED_INPUT;
   }
 
-  return Tridme::EventType::UNHANDLED_INPUT;
+  return eventtype;
 }
 
-int OS::KeyCodeHandler() {
-  char buffer[32];
-  KeySym keysym;
-  XLookupString(&m_xev.xkey, buffer, 32, &keysym, NULL);
+bool OS::X11GetKey(int key) {
+  KeySym keysym = 0;
 
-  return XKeysymToKeycode(m_display, keysym);
+  switch (key) {
+    case Tridme::Keyboard::TRIDME_KEY_0: keysym = XK_0; break;
+    case Tridme::Keyboard::TRIDME_KEY_1: keysym = XK_1; break;
+    case Tridme::Keyboard::TRIDME_KEY_2: keysym = XK_2; break;
+    case Tridme::Keyboard::TRIDME_KEY_3: keysym = XK_3; break;
+    case Tridme::Keyboard::TRIDME_KEY_4: keysym = XK_4; break;
+    case Tridme::Keyboard::TRIDME_KEY_5: keysym = XK_5; break;
+    case Tridme::Keyboard::TRIDME_KEY_6: keysym = XK_6; break;
+    case Tridme::Keyboard::TRIDME_KEY_7: keysym = XK_7; break;
+    case Tridme::Keyboard::TRIDME_KEY_8: keysym = XK_8; break;
+    case Tridme::Keyboard::TRIDME_KEY_9: keysym = XK_9; break;
+    case Tridme::Keyboard::TRIDME_KEY_A: keysym = XK_a; break;
+    case Tridme::Keyboard::TRIDME_KEY_B: keysym = XK_b; break;
+    case Tridme::Keyboard::TRIDME_KEY_C: keysym = XK_c; break;
+    case Tridme::Keyboard::TRIDME_KEY_D: keysym = XK_d; break;
+    case Tridme::Keyboard::TRIDME_KEY_E: keysym = XK_e; break;
+    case Tridme::Keyboard::TRIDME_KEY_F: keysym = XK_f; break;
+    case Tridme::Keyboard::TRIDME_KEY_G: keysym = XK_g; break;
+    case Tridme::Keyboard::TRIDME_KEY_H: keysym = XK_h; break;
+    case Tridme::Keyboard::TRIDME_KEY_I: keysym = XK_i; break;
+    case Tridme::Keyboard::TRIDME_KEY_J: keysym = XK_j; break;
+    case Tridme::Keyboard::TRIDME_KEY_K: keysym = XK_k; break;
+    case Tridme::Keyboard::TRIDME_KEY_L: keysym = XK_l; break;
+    case Tridme::Keyboard::TRIDME_KEY_M: keysym = XK_m; break;
+    case Tridme::Keyboard::TRIDME_KEY_N: keysym = XK_n; break;
+    case Tridme::Keyboard::TRIDME_KEY_O: keysym = XK_o; break;
+    case Tridme::Keyboard::TRIDME_KEY_P: keysym = XK_p; break;
+    case Tridme::Keyboard::TRIDME_KEY_Q: keysym = XK_q; break;
+    case Tridme::Keyboard::TRIDME_KEY_R: keysym = XK_r; break;
+    case Tridme::Keyboard::TRIDME_KEY_S: keysym = XK_s; break;
+    case Tridme::Keyboard::TRIDME_KEY_T: keysym = XK_t; break;
+    case Tridme::Keyboard::TRIDME_KEY_U: keysym = XK_u; break;
+    case Tridme::Keyboard::TRIDME_KEY_V: keysym = XK_v; break;
+    case Tridme::Keyboard::TRIDME_KEY_W: keysym = XK_w; break;
+    case Tridme::Keyboard::TRIDME_KEY_X: keysym = XK_x; break;
+    case Tridme::Keyboard::TRIDME_KEY_Y: keysym = XK_y; break;
+    case Tridme::Keyboard::TRIDME_KEY_Z: keysym = XK_z; break;
+  }
+
+  KeyCode keycode = XKeysymToKeycode(m_display, keysym);
+  if (keycode != 0) {
+    char keys[32];
+    XQueryKeymap(m_display, keys);
+
+    return (keys[keycode / 8] & (1 << (keycode % 8))) != 0;
+  } else {
+    return false;
+  }
+}
+
+int OS::GetKeyCode() {
+  return m_xev.xkey.keycode;
+}
+
+Tridme::MouseEvent OS::GetMouseEvent() {
+  Tridme::MouseEvent ev;
+
+  ev.button = m_xev.xbutton.button;
+  ev.pos_x  = m_xev.xmotion.x;
+  ev.pos_y  = m_xev.xmotion.y;
+
+  return ev;
 }
 
 int OS::SwapBuffers() {

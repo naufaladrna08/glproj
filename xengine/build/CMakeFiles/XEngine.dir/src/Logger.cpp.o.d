@@ -1,7 +1,7 @@
 CMakeFiles/XEngine.dir/src/Logger.cpp.o: \
- /home/naufal/Documents/Projects/xengine/src/Logger.cpp \
+ /home/naufal/Documents/Projects/glproj/xengine/src/Logger.cpp \
  /usr/include/stdc-predef.h \
- /home/naufal/Documents/Projects/xengine/include/Logger.h \
+ /home/naufal/Documents/Projects/glproj/xengine/include/Logger.h \
  /usr/include/c++/11/cstdio \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -65,5 +65,5 @@ CMakeFiles/XEngine.dir/src/Logger.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
  /usr/include/c++/11/bits/std_abs.h /usr/include/c++/11/cstring \
  /usr/include/string.h /usr/include/strings.h \
- /home/naufal/Documents/Projects/xengine/include/String.h \
+ /home/naufal/Documents/Projects/glproj/xengine/include/String.h \
  /usr/include/c++/11/stdlib.h

@@ -1,5 +1,5 @@
 CMakeFiles/XEngine.dir/src/glx.c.o: \
- /home/naufal/Documents/Projects/xengine/src/glx.c \
+ /home/naufal/Documents/Projects/glproj/xengine/src/glx.c \
  /usr/include/stdc-predef.h /usr/include/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -51,13 +51,13 @@ CMakeFiles/XEngine.dir/src/glx.c.o: \
  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
  /usr/include/strings.h \
- /home/naufal/Documents/Projects/xengine/include/glad/glx.h \
+ /home/naufal/Documents/Projects/glproj/xengine/include/glad/glx.h \
  /usr/include/X11/X.h /usr/include/X11/Xlib.h \
  /usr/include/X11/Xfuncproto.h /usr/include/X11/Xosdefs.h \
  /usr/include/X11/Xutil.h /usr/include/X11/keysym.h \
  /usr/include/X11/keysymdef.h \
- /home/naufal/Documents/Projects/xengine/include/glad/gl.h \
- /home/naufal/Documents/Projects/xengine/include/KHR/khrplatform.h \
+ /home/naufal/Documents/Projects/glproj/xengine/include/glad/gl.h \
+ /home/naufal/Documents/Projects/glproj/xengine/include/KHR/khrplatform.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \

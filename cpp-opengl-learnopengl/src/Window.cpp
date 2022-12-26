@@ -1,50 +1,74 @@
 #include <Window.hpp>
 
-Window::Window(int width, int height, const char* title) 
+Tridme::Window::Window(int width, int height, const char* title) 
 : m_width(width),
   m_height(height),
   m_title(title) {
-  if (!glfwInit()) {
-    std::cout << "GLFW INIT FAILED" << std::endl;
-    exit(1);
-  }
-
-  glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
-  glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
-  glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
-
-  m_window = glfwCreateWindow(m_width, m_height, m_title, NULL, NULL);
+  /* Initialize Backend and Create Window */
+  m_os = new OS(width, height, title);
   
-  if (m_window == NULL) {
-    std::cout << "CANNNOT CREATE GLFW WINDOW" << std::endl;
-    exit(1);
+  if (m_os->Init()) {
+    LOG(INFO, "Initialize Tridme on %s", m_os->GetName());
   }
 
-  glfwMakeContextCurrent(m_window);
+  /* Create Context */
+  m_os->CreateContext();
 
-  if (!gladLoadGLLoader((GLADloadproc) glfwGetProcAddress)) {
-    std::cout << "FAILED TO LOAD OPENGL FUNCTION" << std::endl;
-    exit(1);
-  }
+  /* Load OpenGL */
+  m_os->LoadOpenGL();
 
-  glViewport(0, 0, m_width, m_height);
+  /* Initialize core system */
+  m_time = new Timer();
+  m_time_offset = (double) m_time->GetCurrentTime();
 
-  this->m_windowcamera = new Camera(PROJECTION::ORTHOGRAPHIC, m_width, m_height, 0.1f, 100.0f, glm::vec3(0.0f, 0.0f, 3.0f), glm::vec3(0.0f));
+  SetPointerMode(TRIDME_POINTER_MODE_SHOW);
 }
 
-Window::~Window() {
-
+Tridme::Window::~Window() {
+  this->m_os->Close();
 }
 
-bool Window::IsOpen() {
-  return !glfwWindowShouldClose(m_window);
+bool Tridme::Window::IsOpen() {
+  return this->m_running;
 }
 
-void Window::Display() {
-  glfwSwapBuffers(m_window);
+void Tridme::Window::Display() {
+  this->m_os->SwapBuffers();
 }
 
-void Window::SetCamera(Camera& camera) {
-  delete m_windowcamera;
-  this->m_windowcamera = &camera;
+void Tridme::Window::Close() {
+  this->m_running = false;
+  LOG(INFO, "Tridme Engine Closed...");
+}
+
+int Tridme::Window::PollEvents() {
+  return m_os->PollEvents();
+}
+
+Tridme::Event Tridme::Window::GetHandler() {
+  m_ev = new Event;
+  m_ev->type  = m_os->GetHandler();
+  m_ev->key   = m_os->GetKeyCode();
+  m_ev->mouse = m_os->GetMouseEvent();
+  m_ev->time  = (float) m_os->X11GetTIme();
+
+  return *m_ev;
+}
+
+bool Tridme::Window::GetKey(int key) {
+  #ifdef __linux__ 
+    return m_os->X11GetKey(key);
+  #endif
+
+  return false;
+}
+
+float Tridme::Window::GetTime() {
+  return (double) (m_time->GetCurrentTime() - m_time_offset);
+}
+
+void Tridme::Window::SetPointerMode(int mode) {
+  #ifdef __linux__
+    m_os->X11SetPointerMode(mode);
+  #endif
 }

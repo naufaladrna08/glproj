@@ -1,5 +1,5 @@
 CMakeFiles/XEngine.dir/main.cpp.o: \
- /home/naufal/Documents/Projects/xengine/main.cpp \
+ /home/naufal/Documents/Projects/glproj/xengine/main.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/11/iostream \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -146,21 +146,21 @@ CMakeFiles/XEngine.dir/main.cpp.o: \
  /usr/include/c++/11/bits/basic_ios.tcc \
  /usr/include/c++/11/bits/ostream.tcc /usr/include/c++/11/istream \
  /usr/include/c++/11/bits/istream.tcc \
- /home/naufal/Documents/Projects/xengine/include/Window.h \
- /home/naufal/Documents/Projects/xengine/include/Logger.h \
+ /home/naufal/Documents/Projects/glproj/xengine/include/Window.h \
+ /home/naufal/Documents/Projects/glproj/xengine/include/Logger.h \
  /usr/include/c++/11/cstdarg /usr/include/c++/11/ctime \
  /usr/include/c++/11/cstring /usr/include/string.h /usr/include/strings.h \
- /home/naufal/Documents/Projects/xengine/include/String.h \
+ /home/naufal/Documents/Projects/glproj/xengine/include/String.h \
  /usr/include/c++/11/stdlib.h \
- /home/naufal/Documents/Projects/xengine/include/Event.h \
- /home/naufal/Documents/Projects/xengine/include/glad/gl.h \
- /home/naufal/Documents/Projects/xengine/include/KHR/khrplatform.h \
- /home/naufal/Documents/Projects/xengine/include/glad/glx.h \
+ /home/naufal/Documents/Projects/glproj/xengine/include/Event.h \
+ /home/naufal/Documents/Projects/glproj/xengine/include/glad/gl.h \
+ /home/naufal/Documents/Projects/glproj/xengine/include/KHR/khrplatform.h \
+ /home/naufal/Documents/Projects/glproj/xengine/include/glad/glx.h \
  /usr/include/X11/X.h /usr/include/X11/Xlib.h \
  /usr/include/X11/Xfuncproto.h /usr/include/X11/Xosdefs.h \
  /usr/include/X11/Xutil.h /usr/include/X11/keysym.h \
  /usr/include/X11/keysymdef.h /usr/include/inttypes.h \
- /home/naufal/Documents/Projects/xengine/include/Platform/LinuxX11.h \
+ /home/naufal/Documents/Projects/glproj/xengine/include/Platform/LinuxX11.h \
  /usr/include/x86_64-linux-gnu/sys/sysinfo.h /usr/include/linux/kernel.h \
  /usr/include/linux/sysinfo.h /usr/include/linux/types.h \
  /usr/include/x86_64-linux-gnu/asm/types.h \

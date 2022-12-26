@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/naufal/Documents/Projects/xengine
+CMAKE_SOURCE_DIR = /home/naufal/Documents/Projects/glproj/xengine
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/naufal/Documents/Projects/xengine/build
+CMAKE_BINARY_DIR = /home/naufal/Documents/Projects/glproj/xengine/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/XEngine.dir/depend.make
@@ -72,114 +72,114 @@ include CMakeFiles/XEngine.dir/flags.make
 CMakeFiles/XEngine.dir/main.cpp.o: CMakeFiles/XEngine.dir/flags.make
 CMakeFiles/XEngine.dir/main.cpp.o: ../main.cpp
 CMakeFiles/XEngine.dir/main.cpp.o: CMakeFiles/XEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/naufal/Documents/Projects/xengine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/XEngine.dir/main.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/XEngine.dir/main.cpp.o -MF CMakeFiles/XEngine.dir/main.cpp.o.d -o CMakeFiles/XEngine.dir/main.cpp.o -c /home/naufal/Documents/Projects/xengine/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/naufal/Documents/Projects/glproj/xengine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/XEngine.dir/main.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/XEngine.dir/main.cpp.o -MF CMakeFiles/XEngine.dir/main.cpp.o.d -o CMakeFiles/XEngine.dir/main.cpp.o -c /home/naufal/Documents/Projects/glproj/xengine/main.cpp
 
 CMakeFiles/XEngine.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/XEngine.dir/main.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/naufal/Documents/Projects/xengine/main.cpp > CMakeFiles/XEngine.dir/main.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/naufal/Documents/Projects/glproj/xengine/main.cpp > CMakeFiles/XEngine.dir/main.cpp.i
 
 CMakeFiles/XEngine.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/XEngine.dir/main.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/naufal/Documents/Projects/xengine/main.cpp -o CMakeFiles/XEngine.dir/main.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/naufal/Documents/Projects/glproj/xengine/main.cpp -o CMakeFiles/XEngine.dir/main.cpp.s
 
 CMakeFiles/XEngine.dir/src/gl.c.o: CMakeFiles/XEngine.dir/flags.make
 CMakeFiles/XEngine.dir/src/gl.c.o: ../src/gl.c
 CMakeFiles/XEngine.dir/src/gl.c.o: CMakeFiles/XEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/naufal/Documents/Projects/xengine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/XEngine.dir/src/gl.c.o"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/XEngine.dir/src/gl.c.o -MF CMakeFiles/XEngine.dir/src/gl.c.o.d -o CMakeFiles/XEngine.dir/src/gl.c.o -c /home/naufal/Documents/Projects/xengine/src/gl.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/naufal/Documents/Projects/glproj/xengine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/XEngine.dir/src/gl.c.o"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/XEngine.dir/src/gl.c.o -MF CMakeFiles/XEngine.dir/src/gl.c.o.d -o CMakeFiles/XEngine.dir/src/gl.c.o -c /home/naufal/Documents/Projects/glproj/xengine/src/gl.c
 
 CMakeFiles/XEngine.dir/src/gl.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/XEngine.dir/src/gl.c.i"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/naufal/Documents/Projects/xengine/src/gl.c > CMakeFiles/XEngine.dir/src/gl.c.i
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/naufal/Documents/Projects/glproj/xengine/src/gl.c > CMakeFiles/XEngine.dir/src/gl.c.i
 
 CMakeFiles/XEngine.dir/src/gl.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/XEngine.dir/src/gl.c.s"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/naufal/Documents/Projects/xengine/src/gl.c -o CMakeFiles/XEngine.dir/src/gl.c.s
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/naufal/Documents/Projects/glproj/xengine/src/gl.c -o CMakeFiles/XEngine.dir/src/gl.c.s
 
 CMakeFiles/XEngine.dir/src/glx.c.o: CMakeFiles/XEngine.dir/flags.make
 CMakeFiles/XEngine.dir/src/glx.c.o: ../src/glx.c
 CMakeFiles/XEngine.dir/src/glx.c.o: CMakeFiles/XEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/naufal/Documents/Projects/xengine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/XEngine.dir/src/glx.c.o"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/XEngine.dir/src/glx.c.o -MF CMakeFiles/XEngine.dir/src/glx.c.o.d -o CMakeFiles/XEngine.dir/src/glx.c.o -c /home/naufal/Documents/Projects/xengine/src/glx.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/naufal/Documents/Projects/glproj/xengine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/XEngine.dir/src/glx.c.o"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/XEngine.dir/src/glx.c.o -MF CMakeFiles/XEngine.dir/src/glx.c.o.d -o CMakeFiles/XEngine.dir/src/glx.c.o -c /home/naufal/Documents/Projects/glproj/xengine/src/glx.c
 
 CMakeFiles/XEngine.dir/src/glx.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/XEngine.dir/src/glx.c.i"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/naufal/Documents/Projects/xengine/src/glx.c > CMakeFiles/XEngine.dir/src/glx.c.i
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/naufal/Documents/Projects/glproj/xengine/src/glx.c > CMakeFiles/XEngine.dir/src/glx.c.i
 
 CMakeFiles/XEngine.dir/src/glx.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/XEngine.dir/src/glx.c.s"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/naufal/Documents/Projects/xengine/src/glx.c -o CMakeFiles/XEngine.dir/src/glx.c.s
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/naufal/Documents/Projects/glproj/xengine/src/glx.c -o CMakeFiles/XEngine.dir/src/glx.c.s
 
 CMakeFiles/XEngine.dir/src/Platform/LinuxX11.cpp.o: CMakeFiles/XEngine.dir/flags.make
 CMakeFiles/XEngine.dir/src/Platform/LinuxX11.cpp.o: ../src/Platform/LinuxX11.cpp
 CMakeFiles/XEngine.dir/src/Platform/LinuxX11.cpp.o: CMakeFiles/XEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/naufal/Documents/Projects/xengine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/XEngine.dir/src/Platform/LinuxX11.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/XEngine.dir/src/Platform/LinuxX11.cpp.o -MF CMakeFiles/XEngine.dir/src/Platform/LinuxX11.cpp.o.d -o CMakeFiles/XEngine.dir/src/Platform/LinuxX11.cpp.o -c /home/naufal/Documents/Projects/xengine/src/Platform/LinuxX11.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/naufal/Documents/Projects/glproj/xengine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/XEngine.dir/src/Platform/LinuxX11.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/XEngine.dir/src/Platform/LinuxX11.cpp.o -MF CMakeFiles/XEngine.dir/src/Platform/LinuxX11.cpp.o.d -o CMakeFiles/XEngine.dir/src/Platform/LinuxX11.cpp.o -c /home/naufal/Documents/Projects/glproj/xengine/src/Platform/LinuxX11.cpp
 
 CMakeFiles/XEngine.dir/src/Platform/LinuxX11.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/XEngine.dir/src/Platform/LinuxX11.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/naufal/Documents/Projects/xengine/src/Platform/LinuxX11.cpp > CMakeFiles/XEngine.dir/src/Platform/LinuxX11.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/naufal/Documents/Projects/glproj/xengine/src/Platform/LinuxX11.cpp > CMakeFiles/XEngine.dir/src/Platform/LinuxX11.cpp.i
 
 CMakeFiles/XEngine.dir/src/Platform/LinuxX11.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/XEngine.dir/src/Platform/LinuxX11.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/naufal/Documents/Projects/xengine/src/Platform/LinuxX11.cpp -o CMakeFiles/XEngine.dir/src/Platform/LinuxX11.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/naufal/Documents/Projects/glproj/xengine/src/Platform/LinuxX11.cpp -o CMakeFiles/XEngine.dir/src/Platform/LinuxX11.cpp.s
 
 CMakeFiles/XEngine.dir/src/Logger.cpp.o: CMakeFiles/XEngine.dir/flags.make
 CMakeFiles/XEngine.dir/src/Logger.cpp.o: ../src/Logger.cpp
 CMakeFiles/XEngine.dir/src/Logger.cpp.o: CMakeFiles/XEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/naufal/Documents/Projects/xengine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/XEngine.dir/src/Logger.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/XEngine.dir/src/Logger.cpp.o -MF CMakeFiles/XEngine.dir/src/Logger.cpp.o.d -o CMakeFiles/XEngine.dir/src/Logger.cpp.o -c /home/naufal/Documents/Projects/xengine/src/Logger.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/naufal/Documents/Projects/glproj/xengine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/XEngine.dir/src/Logger.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/XEngine.dir/src/Logger.cpp.o -MF CMakeFiles/XEngine.dir/src/Logger.cpp.o.d -o CMakeFiles/XEngine.dir/src/Logger.cpp.o -c /home/naufal/Documents/Projects/glproj/xengine/src/Logger.cpp
 
 CMakeFiles/XEngine.dir/src/Logger.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/XEngine.dir/src/Logger.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/naufal/Documents/Projects/xengine/src/Logger.cpp > CMakeFiles/XEngine.dir/src/Logger.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/naufal/Documents/Projects/glproj/xengine/src/Logger.cpp > CMakeFiles/XEngine.dir/src/Logger.cpp.i
 
 CMakeFiles/XEngine.dir/src/Logger.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/XEngine.dir/src/Logger.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/naufal/Documents/Projects/xengine/src/Logger.cpp -o CMakeFiles/XEngine.dir/src/Logger.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/naufal/Documents/Projects/glproj/xengine/src/Logger.cpp -o CMakeFiles/XEngine.dir/src/Logger.cpp.s
 
 CMakeFiles/XEngine.dir/src/String.cpp.o: CMakeFiles/XEngine.dir/flags.make
 CMakeFiles/XEngine.dir/src/String.cpp.o: ../src/String.cpp
 CMakeFiles/XEngine.dir/src/String.cpp.o: CMakeFiles/XEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/naufal/Documents/Projects/xengine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/XEngine.dir/src/String.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/XEngine.dir/src/String.cpp.o -MF CMakeFiles/XEngine.dir/src/String.cpp.o.d -o CMakeFiles/XEngine.dir/src/String.cpp.o -c /home/naufal/Documents/Projects/xengine/src/String.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/naufal/Documents/Projects/glproj/xengine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/XEngine.dir/src/String.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/XEngine.dir/src/String.cpp.o -MF CMakeFiles/XEngine.dir/src/String.cpp.o.d -o CMakeFiles/XEngine.dir/src/String.cpp.o -c /home/naufal/Documents/Projects/glproj/xengine/src/String.cpp
 
 CMakeFiles/XEngine.dir/src/String.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/XEngine.dir/src/String.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/naufal/Documents/Projects/xengine/src/String.cpp > CMakeFiles/XEngine.dir/src/String.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/naufal/Documents/Projects/glproj/xengine/src/String.cpp > CMakeFiles/XEngine.dir/src/String.cpp.i
 
 CMakeFiles/XEngine.dir/src/String.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/XEngine.dir/src/String.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/naufal/Documents/Projects/xengine/src/String.cpp -o CMakeFiles/XEngine.dir/src/String.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/naufal/Documents/Projects/glproj/xengine/src/String.cpp -o CMakeFiles/XEngine.dir/src/String.cpp.s
 
 CMakeFiles/XEngine.dir/src/Window.cpp.o: CMakeFiles/XEngine.dir/flags.make
 CMakeFiles/XEngine.dir/src/Window.cpp.o: ../src/Window.cpp
 CMakeFiles/XEngine.dir/src/Window.cpp.o: CMakeFiles/XEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/naufal/Documents/Projects/xengine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/XEngine.dir/src/Window.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/XEngine.dir/src/Window.cpp.o -MF CMakeFiles/XEngine.dir/src/Window.cpp.o.d -o CMakeFiles/XEngine.dir/src/Window.cpp.o -c /home/naufal/Documents/Projects/xengine/src/Window.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/naufal/Documents/Projects/glproj/xengine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/XEngine.dir/src/Window.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/XEngine.dir/src/Window.cpp.o -MF CMakeFiles/XEngine.dir/src/Window.cpp.o.d -o CMakeFiles/XEngine.dir/src/Window.cpp.o -c /home/naufal/Documents/Projects/glproj/xengine/src/Window.cpp
 
 CMakeFiles/XEngine.dir/src/Window.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/XEngine.dir/src/Window.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/naufal/Documents/Projects/xengine/src/Window.cpp > CMakeFiles/XEngine.dir/src/Window.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/naufal/Documents/Projects/glproj/xengine/src/Window.cpp > CMakeFiles/XEngine.dir/src/Window.cpp.i
 
 CMakeFiles/XEngine.dir/src/Window.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/XEngine.dir/src/Window.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/naufal/Documents/Projects/xengine/src/Window.cpp -o CMakeFiles/XEngine.dir/src/Window.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/naufal/Documents/Projects/glproj/xengine/src/Window.cpp -o CMakeFiles/XEngine.dir/src/Window.cpp.s
 
 CMakeFiles/XEngine.dir/src/Event.cpp.o: CMakeFiles/XEngine.dir/flags.make
 CMakeFiles/XEngine.dir/src/Event.cpp.o: ../src/Event.cpp
 CMakeFiles/XEngine.dir/src/Event.cpp.o: CMakeFiles/XEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/naufal/Documents/Projects/xengine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/XEngine.dir/src/Event.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/XEngine.dir/src/Event.cpp.o -MF CMakeFiles/XEngine.dir/src/Event.cpp.o.d -o CMakeFiles/XEngine.dir/src/Event.cpp.o -c /home/naufal/Documents/Projects/xengine/src/Event.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/naufal/Documents/Projects/glproj/xengine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/XEngine.dir/src/Event.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/XEngine.dir/src/Event.cpp.o -MF CMakeFiles/XEngine.dir/src/Event.cpp.o.d -o CMakeFiles/XEngine.dir/src/Event.cpp.o -c /home/naufal/Documents/Projects/glproj/xengine/src/Event.cpp
 
 CMakeFiles/XEngine.dir/src/Event.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/XEngine.dir/src/Event.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/naufal/Documents/Projects/xengine/src/Event.cpp > CMakeFiles/XEngine.dir/src/Event.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/naufal/Documents/Projects/glproj/xengine/src/Event.cpp > CMakeFiles/XEngine.dir/src/Event.cpp.i
 
 CMakeFiles/XEngine.dir/src/Event.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/XEngine.dir/src/Event.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/naufal/Documents/Projects/xengine/src/Event.cpp -o CMakeFiles/XEngine.dir/src/Event.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/naufal/Documents/Projects/glproj/xengine/src/Event.cpp -o CMakeFiles/XEngine.dir/src/Event.cpp.s
 
 # Object files for target XEngine
 XEngine_OBJECTS = \
@@ -205,7 +205,7 @@ XEngine: CMakeFiles/XEngine.dir/src/Window.cpp.o
 XEngine: CMakeFiles/XEngine.dir/src/Event.cpp.o
 XEngine: CMakeFiles/XEngine.dir/build.make
 XEngine: CMakeFiles/XEngine.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/naufal/Documents/Projects/xengine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable XEngine"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/naufal/Documents/Projects/glproj/xengine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable XEngine"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/XEngine.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -217,6 +217,6 @@ CMakeFiles/XEngine.dir/clean:
 .PHONY : CMakeFiles/XEngine.dir/clean
 
 CMakeFiles/XEngine.dir/depend:
-	cd /home/naufal/Documents/Projects/xengine/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/naufal/Documents/Projects/xengine /home/naufal/Documents/Projects/xengine /home/naufal/Documents/Projects/xengine/build /home/naufal/Documents/Projects/xengine/build /home/naufal/Documents/Projects/xengine/build/CMakeFiles/XEngine.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/naufal/Documents/Projects/glproj/xengine/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/naufal/Documents/Projects/glproj/xengine /home/naufal/Documents/Projects/glproj/xengine /home/naufal/Documents/Projects/glproj/xengine/build /home/naufal/Documents/Projects/glproj/xengine/build /home/naufal/Documents/Projects/glproj/xengine/build/CMakeFiles/XEngine.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/XEngine.dir/depend
 
