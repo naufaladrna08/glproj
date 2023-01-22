@@ -207,8 +207,8 @@ void Cube::SetTexture(std::string path, int slot) {
   //   true  // Using text
   // ); 
   m_shader = new Shader(
-    "/home/naufal/Documents/Projects/glproj/cpp-opengl-learnopengl/shader/Basic.vert",
-    "/home/naufal/Documents/Projects/glproj/cpp-opengl-learnopengl/shader/Basic.frag"
+    "../shader/Basic.vert",
+    "../shader/Basic.frag"
   );
 
   m_shader->CreateProgram();

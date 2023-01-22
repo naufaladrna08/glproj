@@ -209,17 +209,21 @@ Tridme::MouseEvent OS::GetMouseEvent() {
   Tridme::MouseEvent ev;
 
   ev.button = m_xev.xbutton.button;
+  int posX  = m_xev.xmotion.x;
+  int posY  = m_xev.xmotion.y;
+  int relX  = posX - m_lastMousePosX;
+  int relY  = posY - m_lastMousePosY;
 
   if (this->m_mouseMode == TRIDME_POINTER_MODE_CAPTURED) {
     const int dx =  m_lastMousePosX;
     const int dy =  m_lastMousePosY;
 
-    m_virtualMousePosX += dx;
-    m_virtualMousePosY += dy;
+    m_virtualMousePosX += relX;
+    m_virtualMousePosY += relY;
 
-    DoWarpPointer();
-
-    LOG(INFO, "(%d, %d)", dx, dy);
+    this->DoWarpPointer(relX, relY);
+    
+    LOG(INFO, "(%d, %d)", relX, relY);
   } else {
     m_virtualMousePosX = m_xev.xmotion.x;
     m_virtualMousePosY = m_xev.xmotion.y;
@@ -290,18 +294,31 @@ void OS::X11SetPointerMode(int mode) {
   XFreePixmap(m_display, blank);
 }
 
-void OS::DoWarpPointer() {
+void OS::DoWarpPointer(double xpos, double ypos) {
   /*
    * Kembalikan kursor ke tengah jika kursor melebihi batas window
    * dan mode mouse adalah CAPTURED. 
    */
   if (m_xev.xmotion.x <= 0 || m_xev.xmotion.x >= m_windowWidth  - 1 || 
       m_xev.xmotion.y <= 0 || m_xev.xmotion.y >= m_windowHeight - 1) {
-    XWarpPointer(m_display, m_window, m_window, 0, 0, 0, 0, 
-      m_windowWidth / 2,
-      m_windowHeight / 2);
+    
+      LOG(WARNING, "W = %d, H = %d", m_windowWidth, m_windowHeight);
+      this->SetCursorPointer(m_windowWidth / 2, m_windowHeight / 2);
+    
+    this->m_virtualMousePosX += xpos;
+    this->m_virtualMousePosY += ypos;
+    LOG(ERROR, "WARP ME");
+  } 
 
-    this->m_virtualMousePosX = m_windowWidth / 2;
-    this->m_virtualMousePosY = m_windowHeight / 2;
-  }
+  // LOG(WARNING, "RELATIVE POSITION (%d, %d)", xpos, ypos);
+}
+
+void OS::SetCursorPointer(double x, double y) {
+  // Store the new position so it can be recognized later
+  // double warpCursorPosX = (int) x;
+  // double warpCursorPosY = (int) y;
+
+  XWarpPointer(this->m_display, None, this->m_window,
+                0,0,0,0, (int) x, (int) y);
+  XFlush(this->m_display);
 }

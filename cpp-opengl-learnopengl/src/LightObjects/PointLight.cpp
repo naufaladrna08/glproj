@@ -117,7 +117,7 @@ PointLight::PointLight(Camera& camera) {
   //   false, // Compile
   //   true  // Using text
   // ); 
-  m_shader = new Shader("/home/naufal/Documents/Projects/glproj/cpp-opengl-learnopengl/shader/Light.vert", "/home/naufal/Documents/Projects/glproj/cpp-opengl-learnopengl/shader/Light.frag");
+  m_shader = new Shader("../shader/Light.vert", "../shader/Light.frag");
 
   m_shader->CreateProgram();
 

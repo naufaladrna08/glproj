@@ -33,7 +33,8 @@ class OS {
     bool X11GetKey(int key);
     int GetKeyCode();
     Tridme::MouseEvent GetMouseEvent();
-    void DoWarpPointer();
+    void DoWarpPointer(double xpos, double ypos);
+    void SetCursorPointer(double x, double y);
 
     inline String GetName() { return "GNU/Linux or Unix with X11"; }
     inline Display* GetDisplay() { return this->m_display; }

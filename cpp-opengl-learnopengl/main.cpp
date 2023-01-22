@@ -79,11 +79,11 @@ int main(int argc, char const *argv[]) {
   camera = new Camera(PROJECTION::PERSPECTIVE, 800.0f, 600.0f, 0.1f, 100.0f, campos, glm::vec3(0.0f));
 
   Cube* rect = new Cube(*camera);
-  rect->SetTexture("/home/naufal/Documents/Projects/glproj/cpp-opengl-learnopengl/assets/container2.png", GL_TEXTURE0);
-  rect->SetTexture("/home/naufal/Documents/Projects/glproj/cpp-opengl-learnopengl/assets/container2_specular.png", GL_TEXTURE1);
+  rect->SetTexture("../assets/container2.png", GL_TEXTURE0);
+  rect->SetTexture("../assets/container2_specular.png", GL_TEXTURE1);
   PointLight* light = new PointLight(*camera);
   Cube* floor = new Cube(*camera);
-  floor->SetTexture("/home/naufal/Documents/Projects/glproj/cpp-opengl-learnopengl/assets/grass.jpg", GL_TEXTURE0);
+  floor->SetTexture("../assets/grass.jpg", GL_TEXTURE0);
   floor->SetScale({30.0f, 0.5f, 30.0f});
   floor->SetPosition({0.0f, -2.5f, 0.0f});
 
